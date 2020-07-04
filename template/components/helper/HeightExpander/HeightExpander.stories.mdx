@@ -1,0 +1,46 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import HeightExpander from './HeightExpander.vue'
+
+<Meta title='Components|helper/HeightExpander' component={HeightExpander} />
+
+# HeightExpander
+Creates a demo information box with Markdown Support. It is accessed directly via the project API.
+
+<Preview>
+  <Story name='HeightExpander'>{{
+  components: { HeightExpander },
+  data () {
+    return {
+      expanded: false
+    }
+  },
+  template: `
+    <div>
+      <HeightExpander :timing="timing">
+        <div v-if="expanded">
+          Magna aliquyam erat, sed diam voluptua. At vero eos et
+          accusam et justo duo dolores et ea rebum. Stet clita kasd
+          gubergren, no sea takimata sanctus est Lorem ipsum dolor
+          sit amet. Lorem ipsum dolor sit amet, consetetur
+          sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+          ut labore et dolore magna aliquyam erat, sed diam
+          voluptua. At vero eos et accusam et justo duo dolores et
+          ea rebum. Stet clita kasd gubergren, no sea takimata
+          sanctus est Lorem ipsum dolor sit amet.
+        </div>
+      </HeightExpander>
+      <div
+        style="background: #dfdfdf; cursor: pointer; padding: 10px"
+        @click="expanded = !expanded"
+      >{{ expanded ? 'Shrink' : 'Expand' }}</div>
+    </div>
+  `
+  }}</Story>
+</Preview>
+
+<Props of={HeightExpander} />
+
+## Code
+```html
+<HeightExpander />
+```

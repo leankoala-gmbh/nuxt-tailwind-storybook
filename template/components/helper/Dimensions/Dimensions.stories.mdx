@@ -1,0 +1,40 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import Dimensions from './Dimensions.vue'
+
+<Meta title='Components|helper/Dimensions' component={Dimensions} />
+
+# Dimensions
+A wrapper that returns the height and/or width of the outer container.
+
+<Preview>
+  <Story name='Dimensions'>{{
+  components: { Dimensions },
+  template: `
+    <Dimensions>
+      <h3
+        slot-scope="{ width }"
+        :class="[
+          {'bg-red-900': width > 900},
+          {'bg-red-500': width > 800 && width <= 900},
+          {'bg-red-200': width > 700 && width <= 800},
+          {'bg-blue-200': width > 600 && width <= 700},
+          {'bg-blue-500': width > 500 && width <= 600},
+          {'bg-blue-900': width <= 500},
+        ]"
+        class="p-2 text-white"
+      >
+        Some text
+      </h3>
+    </Dimensions>
+  `
+  }}</Story>
+</Preview>
+
+## Scoped Slots
+- `width [number]`: returns width
+- `height [number]`: returns height
+
+## Code
+```html
+<Dimensions />
+```

@@ -1,0 +1,56 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import <%= moduleName %> from './<%= moduleName %>.vue'
+//import Vuex from 'vuex'
+
+<Meta
+  title='Components|<%= modulePath.split('/')[0] %>/<%= moduleName %>'
+  component={ <%= moduleName %> }
+/>
+
+export const <%= moduleName %>Element = () => ({
+  // props: Object.keys(args),
+  // store: new Vuex.Store({
+  //   modules: {
+  //     STOREMODULE: {
+  //       namespaced: true,
+  //       getters: {}
+  //     }
+  //   }
+  // }),
+  components: { <%= moduleName %> },
+  template: `
+    <<%= moduleName %>>
+      <%= moduleName %>
+    </<%= moduleName %>>
+  `
+})
+
+# <%= moduleName %>
+```components/<%= modulePath.split('/')[0] %>/<%= moduleName %>/<%= moduleName %>.vue```
+
+Componentdescription
+
+<Preview withToolbar="true">
+  <Story name='<%= moduleName %>Story'>
+    {<%= moduleName %>Element.bind({})}
+  </Story>
+</Preview>
+
+<Props story="<%= moduleName %>Story" />
+
+## Technical
+**Dependencies**
+- [LOREM](/?path=/...)
+
+**Used by**
+- Lorem
+
+## Code
+```html
+<<%= moduleName %> />
+```
+
+## API object
+```js
+{}
+```
