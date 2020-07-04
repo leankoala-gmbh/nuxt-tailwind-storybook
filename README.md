@@ -1,51 +1,36 @@
-# Nuxt-Tailwind-Storybook
+# Nuxt-Tailwind-Storybook Boilerplate
 
----
+Boilerplate with preconfigured Nuxt, Storybook v6, Tailwind, Cypress and Jest.
 
 ## Prerequisites
 
 Make sure to have `node 12.0+` and `npm 6.0+` installed
 
-## TailwindCSS
-
-We have updated to version `1.X`.
-Check out the new docs [TailwindCSS](https://next.tailwindcss.com/)
-
 ## Installation
 
-This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
-
 ```bash
-$ vue init leankoala-gmbh/nuxt-tailwind-storybook my-project
-$ cd my-project
+git clone https://github.com/leankoala-gmbh/nuxt-tailwind-storybook
+cd nuxt-tailwind-storybook
+npm i
+npm run dev
+```
+
+
+## Build Setup
+
+``` bash
 # install dependencies
-$ npm install # yarn install
+$ npm i
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
 ```
 
-> Make sure to use a version of vue-cli >= 2.1 (`vue -V`).
-
-## Usage
-
-### Development
-
-```bash
-# serve with hot reloading at localhost:3000
-$ npm run dev # yarn dev
-```
-
-Go to [http://localhost:3000](http://localhost:3000)
-
-### Production
-
-```bash
-# build for production and launch the server
-$ npm run build # yarn build
-$ npm start # yarn start
-```
-
-### Generate
-
-```bash
-# generate a static project
-$ npm run generate # yarn generate
-```
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

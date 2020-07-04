@@ -1,9 +1,8 @@
 {
-  "name": "{{ name }}",
+  "name": "nuxt-tailwind-storybook",
   "version": "1.0.0",
-  "description": "{{ description }}",
-  "author": "{{ author }}",
-  "private": true,
+  "description": "Boilerplate with preconfigured Nuxt, Storybook v6, Tailwind, Cypress and Jest.",
+  "author": "sascha fuchs",
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon --inspect server/index.js --watch server",
     "dev:prod": "cross-env NODE_ENV=production nodemon server/index.js --watch server",

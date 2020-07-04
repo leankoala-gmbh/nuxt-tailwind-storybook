@@ -8,7 +8,7 @@ module.exports = {
     store: false
   },
   fileHeader: {
-    projectName: '{{ name }}'
+    projectName: 'nuxt-tailwind-storybook'
   },
   files: {
     vue: {
