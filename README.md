@@ -6,6 +6,8 @@ Boilerplate with preconfigured Nuxt, Storybook v6, Tailwind, Cypress and Jest.
 
 Make sure to have `node 12.0+` and `npm 6.0+` installed
 
+### Ferdi
+
 ## Installation
 
 ```bash
