@@ -14,26 +14,44 @@ export default {
   name: 'Skeleton',
 
   props: {
+    /**
+     * Maximum width
+     */
     maxWidth: {
       default: 100,
       type: Number
     },
+    /**
+     * Minimum width
+     */
     minWidth: {
       default: 80,
       type: Number
     },
+    /**
+     * Height of the element
+     */
     height: {
       default: '1rem',
       type: String
     },
+    /**
+     * Width of the element
+     */
     width: {
       default: null,
       type: String
     },
+    /**
+     * If the element is to be completely round
+     */
     round: {
       type: Boolean,
       default: false
     },
+    /**
+     * If the skeleton is to assume the full size of the outer container
+     */
     fullSize: {
       type: Boolean,
       default: false

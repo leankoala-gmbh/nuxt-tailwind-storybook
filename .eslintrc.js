@@ -22,14 +22,6 @@ module.exports = {
     'vue/no-unused-vars': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
     'no-unused-vars': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
     'comma-dangle': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
-    'curly': 0,
-    'nuxt/no-cjs-in-config': 'off',
-    'vue/max-attributes-per-line': ['warn', {
-      'singleline': 2,
-      'multiline': {
-        'max': 1,
-        'allowFirstLine': false
-      }
-    }]
+    'nuxt/no-cjs-in-config': 'off'
   }
 }

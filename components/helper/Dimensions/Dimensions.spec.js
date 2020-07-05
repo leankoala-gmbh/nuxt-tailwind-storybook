@@ -6,11 +6,19 @@ describe('Testing Dimensions', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = shallowMount(Dimensions)
+    wrapper = shallowMount(Dimensions, {
+      data () {
+        return { myProp: 'small' }
+      },
+      scopedSlots: {
+        default (props) {
+          return this.$createElement('div', [props.width])
+        }
+      }
+    })
   })
 
   it('is vue instance', () => {
-    expect(wrapper.name()).toBe('Dimensions')
-    expect(wrapper.isVueInstance()).toBeTruthy()
+    expect(wrapper).toBeTruthy()
   })
 })

@@ -1,0 +1,55 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import Skeleton from './Skeleton.vue'
+
+<Meta
+  title='helper/Skeleton'
+  component={ Skeleton }
+/>
+
+export const SkeletonElement = () => ({
+  components: { Skeleton },
+  template: `
+    <div>
+      <Skeleton
+        :maxWidth="400"
+        :minWidth="80"
+        :round="true"
+        width="100px"
+        height="100px"
+        :fullSize="false"
+      />
+      <Skeleton
+        :maxWidth="400"
+        :minWidth="80"
+        :round="false"
+        width="100px"
+        height="100px"
+        :fullSize="false"
+      />
+    </div>
+  `
+})
+
+# Skeleton
+```components/notice/Skeleton/Skeleton.vue```
+
+Creates a background loading element for content that is to be reloaded.
+
+<Preview withToolbar="true">
+  <Story name='SkeletonStory'>
+    {SkeletonElement.bind({})}
+  </Story>
+</Preview>
+
+<Props story="SkeletonStory" />
+
+## Code
+```html
+<Skeleton
+  :maxWidth="400"
+  :minWidth="80"
+  :round="true"
+  width="100px"
+  height="100px"
+/>
+```

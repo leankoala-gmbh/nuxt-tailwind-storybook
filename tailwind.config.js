@@ -93,7 +93,7 @@ module.exports = {
         '.container': {
           width: '100%',
           minWidth: '320px',
-          maxWidth: '1900px'
+          maxWidth: '1200px'
         },
         '.container-small': {
           width: '100%',

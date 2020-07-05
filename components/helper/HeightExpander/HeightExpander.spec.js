@@ -10,7 +10,6 @@ describe('Testing HeightExpander', () => {
   })
 
   it('is vue instance', () => {
-    expect(wrapper.name()).toBe('HeightExpander')
-    expect(wrapper.isVueInstance()).toBeTruthy()
+    expect(wrapper).toBeTruthy()
   })
 })

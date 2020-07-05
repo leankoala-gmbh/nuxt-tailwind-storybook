@@ -1,12 +1,12 @@
 // Vue Testfile
 import { shallowMount } from '@vue/test-utils'
-import Skeleton from '@/components/helper/Skeleton/Skeleton.vue'
+import Logo from '@/components/notice/Logo/Logo.vue'
 
-describe('Testing Skeleton', () => {
+describe('Logo', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = shallowMount(Skeleton)
+    wrapper = shallowMount(Logo)
   })
 
   it('is vue instance', () => {

@@ -1,7 +1,7 @@
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
 import HeightExpander from './HeightExpander.vue'
 
-<Meta title='Components|helper/HeightExpander' component={HeightExpander} />
+<Meta title='helper/HeightExpander' component={HeightExpander} />
 
 # HeightExpander
 Creates a demo information box with Markdown Support. It is accessed directly via the project API.
@@ -16,7 +16,7 @@ Creates a demo information box with Markdown Support. It is accessed directly vi
   },
   template: `
     <div>
-      <HeightExpander :timing="timing">
+      <HeightExpander timing="fast">
         <div v-if="expanded">
           Magna aliquyam erat, sed diam voluptua. At vero eos et
           accusam et justo duo dolores et ea rebum. Stet clita kasd

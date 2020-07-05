@@ -10,7 +10,6 @@ describe('Testing <%= moduleName %>', () => {
   })
 
   it('is vue instance', () => {
-    expect(wrapper.name()).toBe('<%= moduleName %>')
     expect(wrapper.isVueInstance()).toBeTruthy()
   })
 })

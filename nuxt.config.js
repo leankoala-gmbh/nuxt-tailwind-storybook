@@ -61,7 +61,7 @@ module.exports = {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: process.env.MAINTITLE || '',
+    title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -76,7 +76,8 @@ module.exports = {
    */
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000',
-    apiBaseUrl: process.env.API_BASE_URL || ''
+    apiBaseUrl: process.env.API_BASE_URL || '',
+    appName: process.env.npm_package_name || ''
   },
   /**
    * Configure Webpack Watchers
@@ -207,7 +208,7 @@ module.exports = {
       },
       preset: {
         autoprefixer: {
-          grid: true,
+          grid: process.env.NODE_ENV === 'production',
           cascade: false
         },
         stage: 0
