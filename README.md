@@ -82,6 +82,20 @@ ferdi notice/TestComponent --docs
 Storybook is in the current V6 beta, prepared for stories in [MDX format](https://github.com/storybookjs/storybook/tree/next/addons/docs). The new format is recommended to give the author more freedom in the design. Props, events and slots are automatically read from the components and subcomponents.
 
 ### Storybook Commands
+Starts Storybook in Watch Mode.
+```bash
+npm run storybook
+```
+
+To generate the storybook documentation as a static file:
+```bash
+npm run storybookBuild
+```
+
+To make Storybook reflect the style of the components, the CSS file must be generated. This is not shortened by PurgeCSS.
+```bash
+npm run storybookStyle
+```
 
 ### MDX and i18n
 Since this boilerplate was designed for multilanguage support, Vue-i18n is also included in Storybook. Unfortunately this has a disadvantage. If you want to change the props in the stories dynamically (as you already knew it from the Knobs plugin), this will not work with active multilingualism. If you want to build a Nuxt app without multilingualism, you should comment out the decorator in the `./storybook/preview.js`.
@@ -122,9 +136,21 @@ export const MyElement = (args) => ({
 })
 ```
 
-## Cypress for Testing Stories
+## Testing Stories with Cypress
+Since stories can also be displayed as separate pages, this is a smart way to test this story with Cypress. Since the components within the story are already mocked for display, they can be easily tested with an E2E test. 
+
+To start Storybook and Cypress you can use the following command:
+```bash
+npm run storyCypress
+```
 
 ## API Abstraction
+Usually the API calls are noted directly in the components. If endpoints change during the course of the project, it becomes more time-consuming to adapt them, especially for larger applications. It is easier if you switch an abstraction layer in between. 
+
+The abstraction layer is created with the plugin [YamlFul](https://github.com/galvez/yamlful). Via the yaml file `api.yml`, Project Root, the individual routes are conveniently noted.
+
+If the plugin is not enough, the Nuxt plugin can also use 'repository.js' in the plugin folder. The spelling is a bit more complex, more [informations](https://blog.lichter.io/posts/nuxt-api-call-organization-and-decoupling/)
+
 
 ## Composition API
 

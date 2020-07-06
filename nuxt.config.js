@@ -100,7 +100,7 @@ module.exports = {
    ** https://nuxtjs.org/guide/plugins
    */
   plugins: [
-    // { src: '~plugins/repository' }, // Decouple API Access https://blog.lichter.io/posts/nuxt-api-call-organization-and-decoupling/
+    // { src: '~plugins/repository'},
     // { src: '~plugins/portals' }, // For Vue-Portals https://portal-vue.linusb.org/
     // { src: '~/plugins/vue-formulate' }, // Vue Formulate https://vueformulate.com/
     // { src: '~plugins/persistedStore', mode: 'client' } // To persist the Vuex Store https://github.com/robinvdvleuten/vuex-persistedstate#readme
@@ -125,6 +125,8 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    // Doc: https://github.com/galvez/yamlful
+    // 'yamlful-nuxt',
     // Doc: https://axios.nuxtjs.org/
     '@nuxtjs/axios',
     // Doc: https://github.com/Developmint/nuxt-webfontloader
