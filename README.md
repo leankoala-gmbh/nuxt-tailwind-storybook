@@ -124,6 +124,8 @@ export const MyElement = (args) => ({
 
 ## Cypress for Testing Stories
 
+## API Abstraction
+
 ## Composition API
 
 ## Addition for Storm IDE

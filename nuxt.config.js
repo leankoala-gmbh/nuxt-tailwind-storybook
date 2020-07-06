@@ -100,6 +100,7 @@ module.exports = {
    ** https://nuxtjs.org/guide/plugins
    */
   plugins: [
+    // { src: '~plugins/repository' }, // Decouple API Access https://blog.lichter.io/posts/nuxt-api-call-organization-and-decoupling/
     // { src: '~plugins/portals' }, // For Vue-Portals https://portal-vue.linusb.org/
     // { src: '~/plugins/vue-formulate' }, // Vue Formulate https://vueformulate.com/
     // { src: '~plugins/persistedStore', mode: 'client' } // To persist the Vuex Store https://github.com/robinvdvleuten/vuex-persistedstate#readme
