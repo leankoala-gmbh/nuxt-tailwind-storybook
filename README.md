@@ -81,6 +81,9 @@ ferdi notice/TestComponent --docs
 ## Storybook
 Storybook is in the current V6 beta, prepared for stories in [MDX format](https://github.com/storybookjs/storybook/tree/next/addons/docs). The new format is recommended to give the author more freedom in the design. Props, events and slots are automatically read from the components and subcomponents.
 
+### Storybook Commands
+
+### MDX and i18n
 Since this boilerplate was designed for multilanguage support, Vue-i18n is also included in Storybook. Unfortunately this has a disadvantage. If you want to change the props in the stories dynamically (as you already knew it from the Knobs plugin), this will not work with active multilingualism. If you want to build a Nuxt app without multilingualism, you should comment out the decorator in the `./storybook/preview.js`.
 
 ```js
@@ -118,3 +121,15 @@ export const MyElement = (args) => ({
   `
 })
 ```
+
+## Cypress for Testing Stories
+
+## Composition API
+
+## Addition for Storm IDE
+
+### Eslint Autofix
+
+### Webpack Alias
+
+### Debugging Nuxt with IDE
