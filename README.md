@@ -152,7 +152,9 @@ The abstraction layer is created with the plugin [YamlFul](https://github.com/ga
 If the plugin is not enough, the Nuxt plugin can also use 'repository.js' in the plugin folder. The spelling is a bit more complex, more [informations](https://blog.lichter.io/posts/nuxt-api-call-organization-and-decoupling/)
 
 
-## Composition API
+## Nuxt Composition API (Experimental)
+Those who already want to benefit from the advantages of the composition API can add the module within the `buildModules`.
+[Further Information](https://composition-api.now.sh/)
 
 ## Addition for Storm IDE
 
