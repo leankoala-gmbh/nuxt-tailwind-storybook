@@ -8,6 +8,7 @@ Boilerplate with preconfigured Nuxt, Storybook v6 Beta, Tailwind, Cypress and Je
 - [Nuxt-Axios](https://axios.nuxtjs.org/)
 - [Nuxt-TailwindCSS](https://github.com/nuxt-community/tailwindcss-module)
 - [Nuxt-Content](https://content.nuxtjs.org/)
+- [YamlFul](https://github.com/galvez/yamlful) (not activated)
 - [Portals-Vue](https://portal-vue.linusb.org/) (not activated)
 - [Vue-Formulate](https://vueformulate.com/) (not activated)
 - [Vuex-PersistedStore](https://github.com/robinvdvleuten/vuex-persistedstate#readme) (not activated)
@@ -158,8 +159,11 @@ Those who already want to benefit from the advantages of the composition API can
 
 ## Addition for Storm IDE
 
-### Eslint Autofix
+### Eslint Autofix with Jetbrain IDEs 
+In the newer versions of the IDEs, ESlint errors can be fixed automatically when saving. To do so, open the settings and then go to Languages & Frameworks > Javascript > Code Quality Tools > Eslint. The Eslint Config should be activated under with Automatic. After that you only have to activate the checkbox `Run eslint --fix on save`.
 
-### Webpack Alias
+### Webpack Aliase with Jetbrain IDEs 
+You open the IDE's setting, under Languages & Frameworks > Javascript > Webpack. There you select under `Webpack Configuration File` the `webpack.config.js` in the project root. After that the IDE will be able to trace the aliases and use the aliases in the import calls during auto import.
 
 ### Debugging Nuxt with IDE
+https://medium.com/@fernalvarez/nuxt-js-debugging-for-webstorm-9b4ef5415a5
