@@ -37,6 +37,13 @@ module.exports = {
     gap: false
   },
   theme: {
+    typography: theme => ({
+      default: {
+        css: {
+          color: theme('colors.gray.800')
+        }
+      }
+    }),
     extend: {}
   },
   variants: {
@@ -46,6 +53,7 @@ module.exports = {
   plugins: [
     require('tailwindcss-aspect-ratio'),
     require('tailwindcss-scroll-snap'),
+    require('@tailwindcss/typography'),
     function ({ addUtilities }) {
       const additional = {
         '.cmt-2 + .cmt-2': {
