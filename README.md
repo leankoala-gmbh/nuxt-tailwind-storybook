@@ -98,8 +98,8 @@ To make Storybook reflect the style of the components, the CSS file must be gene
 npm run storybookStyle
 ```
 
-### MDX and i18n
-Since this boilerplate was designed for multilanguage support, Vue-i18n is also included in Storybook. Unfortunately this has a disadvantage. If you want to change the props in the stories dynamically (as you already knew it from the Knobs plugin), this will not work with active multilingualism. If you want to build a Nuxt app without multilingualism, you should comment out the decorator in the `./storybook/preview.js`.
+### i18n Support
+This boilerplate has been provided with i18n support, but if you don't need multilanguage support, you should remove the decorators from the `./storybook/preview.js` File.
 
 ```js
 addDecorator(() => ({
@@ -109,7 +109,7 @@ addDecorator(() => ({
 ```
 
 ### Control Props
-If multilingualism is deactivated, it is possible to control the props via the story. To do this you have to extend the storyfile with the `argTypes` object.
+It is possible to control the props via the story. To do this you have to extend the storyfile with the `argTypes` object.
 
 ```
 <Meta
@@ -128,7 +128,7 @@ If multilingualism is deactivated, it is possible to control the props via the s
 The ArgTypes must then be passed on to the component in the storyfile.
 
 ```
-export const MyElement = (args) => ({
+export const MyElement = (args, { argTypes }) => ({
   props: Object.keys(args),
   components: { Element },
   template: `
